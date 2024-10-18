@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/ryanterri/amortization-calculator/pkg/amortization"
+	"github.com/ryandterri/amortization-calculator/pkg/amortization"
 )
 
 func main() {
