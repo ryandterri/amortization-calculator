@@ -1,9 +1,10 @@
 package main
 
 import (
-	"amortization-calculator/pkg/amortization"
 	"flag"
 	"fmt"
+
+	"github.com/ryanterri/amortization-calculator/pkg/amortization"
 )
 
 func main() {
