@@ -1,3 +1,3 @@
-module github.com/ryanterri/amortization-calculator
+module github.com/ryandterri/amortization-calculator
 
 go 1.23.2
