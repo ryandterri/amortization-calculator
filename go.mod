@@ -1,3 +1,3 @@
-module amortization-calc-go
+module amortization-calculator
 
 go 1.19
