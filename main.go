@@ -1,7 +1,7 @@
 package main
 
 import (
-	"amortization-calc-go/pkg/amortization"
+	"amortization-calculator/pkg/amortization"
 	"flag"
 	"fmt"
 )
