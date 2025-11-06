@@ -1,8 +1,18 @@
-name: Gitea Actions Demo
+name: "NUC Runner Demo"
 on: [push]
+
 jobs:
-  Explore-Gitea-Actions:
-    runs-on: ubuntu-latest
+  hello-world:
+    runs-on: self-hosted
     steps:
-      - run: echo "The job was triggered by ${{ gitea.event_name }} event."
-      - run: echo "The runner name is ${{ runner.name }} and OS is ${{ runner.os }}."
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Say Hello
+        run: |
+          echo "Hi from ${{ runner.name }} on ${{ runner.os }}!"
+          echo "Running on hostname: $(hostname)"
+          echo "Date/time: $(date)"
+
+      - name: Test Docker
+        run: docker info | head -n 5
