@@ -1,0 +1,8 @@
+name: Gitea Actions Demo
+on: [push]
+jobs:
+  Explore-Gitea-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "The job was triggered by ${{ gitea.event_name }} event."
+      - run: echo "The runner name is ${{ runner.name }} and OS is ${{ runner.os }}."
